@@ -71,6 +71,17 @@ const numbersarr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+stringarr = ["EPICODE", "is", "great"];
+
+function array(arr) {
+  newarr = [];
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    newarr.push(element.length);
+  }
+  console.log(newarr);
+}
+array(stringarr);
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
@@ -207,8 +218,15 @@ const movies = [
 */
 
 /* ESERCIZIO 12
-  Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
+Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+// titlearr = [];
+// movies.forEach((num) => {
+//   num.Title;
+//   titlearr.push(num.Title);
+// });
+// console.log(titlearr);
 
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
