@@ -214,22 +214,22 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-const years = movies.map((movie) => parseInt(movie.Year));
+// const years = movies.map((movie) => parseInt(movie.Year));
 
-let foundyear = years[0];
-let foundindex = 0;
-let foundmovies = movies[0];
+// let foundyear = years[0];
+// let foundindex = 0;
+// let foundmovies = movies[0];
 
-for (let i = 0; i < years.length; i++) {
-  const currentyear = years[i];
-  if (currentyear < foundyear) {
-    foundyear = currentyear;
-    foundindex = i;
-    foundmovies = movies[i];
-  }
-}
+// for (let i = 0; i < years.length; i++) {
+//   const currentyear = years[i];
+//   if (currentyear < foundyear) {
+//     foundyear = currentyear;
+//     foundindex = i;
+//     foundmovies = movies[i];
+//   }
+// }
 
-console.log(movies[foundindex].Title);
+// console.log(movies[foundindex].Title);
 
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
