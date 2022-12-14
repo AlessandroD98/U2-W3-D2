@@ -71,17 +71,18 @@ const numbersarr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
-stringarr = ["EPICODE", "is", "great"];
+// stringarr = ["EPICODE", "is", "great"];
 
-function array(arr) {
-  newarr = [];
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    newarr.push(element.length);
-  }
-  console.log(newarr);
-}
-array(stringarr);
+// function array(arr) {
+//   newarr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+//     newarr.push(element.length);
+//   }
+//   console.log(newarr);
+// }
+// array(stringarr);
+
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
@@ -212,6 +213,23 @@ const movies = [
 /* ESERCIZIO 10
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+
+const years = movies.map((movie) => parseInt(movie.Year));
+
+let foundyear = years[0];
+let foundindex = 0;
+let foundmovies = movies[0];
+
+for (let i = 0; i < years.length; i++) {
+  const currentyear = years[i];
+  if (currentyear < foundyear) {
+    foundyear = currentyear;
+    foundindex = i;
+    foundmovies = movies[i];
+  }
+}
+
+console.log(movies[foundindex].Title);
 
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
